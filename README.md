@@ -79,10 +79,19 @@ Actualizar Linux Mint
 sudo apt update && sudo apt upgrade -y
 ```
 Instalar paquetes requeridos
-```ssh
+```sh
 sudo apt install software-properties-common apt-transport-https wget -y
 ```
 Importar repositorio de código de Visual Studio
-```ssh
+```sh
 sudo wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
+```
+En segundo lugar, importe el Repositorio de Microsoft Visual Source con el siguiente comando en su terminal.
+```sh
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
+```
+Instalar código de Visual Studio
+```sh
+sudo apt update
+sudo apt install code -y
 ```
