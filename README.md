@@ -2,18 +2,16 @@
 ## Git
 
 Instalar Git:
-
 ```sh
 $ sudo apt-get install git
 ```
-
+***
 Configurar usuario global:
-
 ```sh
 $ git config --global user.name "Mi nombre"
 $ git config --global user.email "mi@correo.com"
 ```
-
+***
 
 ## JRE
 
@@ -95,3 +93,20 @@ Instalar código de Visual Studio
 sudo apt update
 sudo apt install code -y
 ```
+## Extensiones para proyectos Java
+1. Java Extension Pack
+2. Spring Boot Extension Pack
+3. Docker
+
+
+## Documento entregable
+1. Captura de pantalla de la configuracion git.
+2. Captura de pantalla de la version de Java y Javac.
+3. Captura de pantalla que muestre vscode funcionando 
+4. Captura de pantalla con las extensiones instaladas
+
+
+
+
+
+
