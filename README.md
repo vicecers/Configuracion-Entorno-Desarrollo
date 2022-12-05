@@ -74,6 +74,15 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 Instalar VSCODE
 
+Actualizar Linux Mint
 ```sh
-
+sudo apt update && sudo apt upgrade -y
+```
+Instalar paquetes requeridos
+```ssh
+sudo apt install software-properties-common apt-transport-https wget -y
+```
+Importar repositorio de código de Visual Studio
+```ssh
+sudo wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 ```
